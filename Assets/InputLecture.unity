@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d3bdb4caa7d48bcb6d027d30f57b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyboardMover
-  Speed: 1
+  Speed: 6.55
 --- !u!65 &1381046723
 BoxCollider:
   m_ObjectHideFlags: 0
