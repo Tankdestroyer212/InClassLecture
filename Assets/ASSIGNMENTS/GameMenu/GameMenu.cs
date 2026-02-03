@@ -11,20 +11,40 @@ public class GameMenu : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-    
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        ShowMainMenu();
     }
 
     public void ShowMainMenu()
     {
+        DisableAll();
         mainMenu.SetActive(true);
+    }
+
+    public void ShowOptionsMenu()
+    {
+        DisableAll();
+        optionsMenu.SetActive(true);
+    }
+
+    public void ShowCreditsMenu()
+    {
+        DisableAll();
+        creditsMenu.SetActive(true);
+    }
+
+    public void ShowQuitPopup()
+    {
+        quitPopup.SetActive(true);
+    }
+
+    public void CloseQuitPopup()
+    {
+        quitPopup.SetActive(false);
+    }
+
+    public void DisableAll()
+    {
+        mainMenu.SetActive(false);
         optionsMenu.SetActive(false);
         creditsMenu.SetActive(false);
         quitPopup.SetActive(false);
